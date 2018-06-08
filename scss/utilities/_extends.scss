@@ -1,0 +1,67 @@
+// ==========================================================================
+// Extends
+// ==========================================================================
+
+// Nav Items
+
+
+// Headlines
+
+
+// Buttons
+
+%btn {
+  padding: 15px 30px;
+  border: 0;
+  border-radius : $br--default;
+  color: $white;
+  text-transform: uppercase;
+  font-size : em(16px);
+  font-weight: $font-weight--heavy;
+  transition: opacity $trns-duration;
+  display: block;
+  width: 100%;
+  &:hover {
+    opacity: .75;
+  }
+  &:active {
+    opacity: initial;
+  }
+}
+
+// Screen reader text
+
+.srt {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+// Menu link
+
+
+// Icons
+
+
+// Center elements
+
+%center {
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Clearfix
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

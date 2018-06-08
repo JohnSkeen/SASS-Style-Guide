@@ -1,0 +1,32 @@
+.container {
+  font-family: $font-family--primary;
+  width: 85%;
+  @extend %center;
+}
+
+.link {
+  color: $color-secondary;
+  font-weight: $font-weight--heavy;
+  text-decoration: none;
+}
+
+.blockquote {
+  padding-left: em(15px);
+  margin: 0 0 em(30px) em(10px);
+  font-size: em(24px);
+  color: palette(grey, light);
+  font-style: italic;
+  border-left: 8px solid $color-primary;
+  border-radius: $br--default;
+}
+
+.headline--primary {
+  color: $color-primary;
+  padding-left: em(15px);
+}
+
+.headline--secondary {
+  color: palette(grey, light);
+  font-weight: $font-weight--light;
+  padding-bottom: em(10px);
+}

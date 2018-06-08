@@ -1,0 +1,15 @@
+
+.img {
+  @include m(frame) {
+    padding: em(15px);
+    border: 1px palette(grey, light) solid;
+  }
+}
+
+.img--avatar {
+
+}
+
+.img--logo {
+
+}
