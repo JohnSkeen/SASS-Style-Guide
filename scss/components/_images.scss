@@ -1,15 +1,16 @@
 
 .img {
   @include m(frame) {
+    width: 100%;
     padding: em(15px);
     border: 1px palette(grey, light) solid;
   }
-}
-
-.img--avatar {
-
-}
-
-.img--logo {
-
+  @include m(avatar) {
+    display: block;
+    margin: 0 auto;
+  }
+  @include m(logo) {
+      display: block;
+      margin: 0 auto;
+    }
 }

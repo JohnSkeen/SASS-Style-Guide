@@ -44,8 +44,6 @@
   @for $i from 1 through $f-col-count {
     $context: f-context($f-col-width, $f-col-count ,$f-gutter-width) !global;
     $target: ($f-col-width * $i) + ($f-gutter-width * ($i - 1));
-
-    // Generate and output the column modifier classes
     &--#{$i} {
       width: percentage($target / $context);
     }
@@ -63,5 +61,15 @@
 @each $theme, $color in $grid-colors {
   .grid__col--#{$theme}.theme__colors {
     background-color: $color;
+  }
+}
+
+
+// Adjacent sibling margins
+
+@mixin doubly($margin: 1em) {
+  & + & {
+   margin-left: $margin;
+   @content;
   }
 }

@@ -1,7 +1,11 @@
 .btn {
-  @include m(default) {
-    @extend %btn;
-    background: $color-secondary;
+  @each $item in $btn--list {
+    @include m(#{$item}) {
+      @extend %btn;
+      @include mq(medium) {
+      flex: 1;
+      margin: 0 25px;}
+    }
   }
 }
 .btn--success {

@@ -19,13 +19,37 @@
   font-size : em(16px);
   font-weight: $font-weight--heavy;
   transition: opacity $trns-duration;
-  display: block;
-  width: 100%;
+  margin-bottom: em(25px);
   &:hover {
     opacity: .75;
   }
   &:active {
     opacity: initial;
+  }
+}
+
+%nav {
+  color: $grey;
+  text-align: center;
+  list-style-type: none;
+  padding: 20px 0;
+  a {
+    border-radius : $br--default;
+    padding: 25px 30px;
+    color: $grey;
+    text-decoration: none;
+    font-size : em(18px);
+    font-weight: $font-weight--medium;
+    transition: opacity $trns-duration;
+    margin-bottom: em(25px);
+    &:hover {
+      background: $color-primary;
+      color: white;
+    }
+    &:active {
+      background-color: $color-primary;
+      color: white;
+    }
   }
 }
 
