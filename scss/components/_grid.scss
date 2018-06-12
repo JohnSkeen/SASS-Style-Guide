@@ -1,12 +1,8 @@
-.container {
-
-}
 .grid__row {
   padding-top: em(12px);
   padding-bottom: em(12px);
   @include mq(medium) {
-    display: flex;
-    justify-content: space-between;
+  @include flex($just: center) {}
     &:first-of-type {
       width: 90%;
       margin: 0 auto;
@@ -39,47 +35,32 @@
 		}
   }
 }
-.grid__col--2 {
 
-}
-.grid__col--3 {
-
-}
 .grid__col--4 {
-flex-basis: 33%;
+  flex-basis: 33%;
 }
+
 .grid__col--5 {
   flex-basis: 50%;
 }
-.grid__col--6 {
 
-}
 .grid__col--7 {
   flex-basis: 70%;
 }
+
 .grid__col--8 {
-flex-basis: 66%;
+  flex-basis: 66%;
 }
-.grid__col--9 {
 
-}
-.grid__col--10 {
-
-}
-.grid__col--11 {
-
-}
 .grid__col--12 {
-  display: flex;
-  flex-direction: column;
+  width: 100%;
+  @include flex ($dir: column) {}
+  @extend %center-alt;
   @include mq(medium) {
-    flex-direction: row;
-    justify-content: space-around;
+    @include flex ($dir: row, $just: space-between) {};
   }
 }
+
 .centered {
 @extend %center;
-}
-.theme__colors {
-
 }

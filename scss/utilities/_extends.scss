@@ -2,12 +2,6 @@
 // Extends
 // ==========================================================================
 
-// Nav Items
-
-
-// Headlines
-
-
 // Buttons
 
 %btn {
@@ -20,6 +14,7 @@
   font-weight: $font-weight--heavy;
   transition: opacity $trns-duration;
   margin-bottom: em(25px);
+  width: 100%;
   &:hover {
     opacity: .75;
   }
@@ -66,18 +61,17 @@
 	width: 1px;
 }
 
-// Menu link
-
-
-// Icons
-
-
 // Center elements
 
 %center {
 	float: none;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+%center-alt {
+  display: block;
+  margin: 0 auto;
 }
 
 // Clearfix

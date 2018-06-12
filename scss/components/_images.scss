@@ -1,16 +1,24 @@
-
 .img {
   @include m(frame) {
     width: 100%;
+    @extend %center-alt;
     padding: em(15px);
     border: 1px palette(grey, light) solid;
+    @include mq (medium) {
+      max-width: 410px;
+    }
   }
   @include m(avatar) {
-    display: block;
-    margin: 0 auto;
+    @extend %center-alt;
+    width: 100%;
+    max-width: 199px;
   }
   @include m(logo) {
-      display: block;
-      margin: 0 auto;
+    @extend %center-alt;
+    width: 100%;
+    max-width: 199px;
+      @include mq(medium) {
+      float: left;
     }
+  }
 }

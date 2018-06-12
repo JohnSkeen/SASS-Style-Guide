@@ -3,23 +3,11 @@
     @include m(#{$item}) {
       @extend %btn;
       @include mq(medium) {
-      flex: 1;
-      margin: 0 25px;}
+        margin-right: 20px;
+        &:last-of-type {
+          margin-right: 0px;
+        }
+      }
     }
   }
-}
-.btn--success {
-
-}
-.btn--error {
-
-}
-.btn--warning {
-
-}
-.btn--info {
-
-}
-.theme__colors {
-
 }

@@ -8,6 +8,7 @@
   }
 
   @include e(input) {
+    @extend %center-alt;
     width: 90%;
     font-size: em(18px);
     font-weight: $font-weight--heavy;
@@ -20,12 +21,4 @@
       outline: none;
     }
   }
-}
-
-.form__label--hidden {
-
-}
-
-.form__input {
-
 }

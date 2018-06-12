@@ -1,13 +1,11 @@
 .nav {
-  display: flex;
-  flex-direction: column;
+  @include flex($dir: column) {}
   padding: 0;
   @include mq(medium) {
     flex-direction: row;
   }
-}
-
-.nav__item {
-  display: block;
-  @extend %nav;
+  &__item {
+    display: block;
+    @extend %nav;
+  }
 }

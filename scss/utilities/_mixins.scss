@@ -50,6 +50,17 @@
   }
 };
 
+// Flexbox Mixin
+
+@mixin flex ($display: flex, $dir: null, $wrap: null, $just: null){
+    display: $display;
+    flex-direction: $dir;
+    flex-wrap: $wrap;
+    justify-content: $just;
+    @content;
+}
+
+
 // UI Colors
 
 @each $theme, $color in $btn-colors {
